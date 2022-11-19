@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/notifications">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:key="notification_allowance"
+            android:summary="@string/notify_des"
+            android:title="@string/use_notify" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/timer_len">
+
+        <SeekBarPreference
+            android:defaultValue="10"
+            android:key="timer_length"
+            android:max="120"
+            android:summary="@string/timer_len_des"
+            android:title="@string/timer_len_men"
+            app:adjustable="true"
+            app:min="1"
+            app:showSeekBarValue="true" />
+
+<!--        <EditTextPreference
+            android:dependency="timer_length"
+            android:key="timer_length_key"
+            android:summary="@string/timer_len_des"
+            android:title="@string/timer_len"
+            app:singleLineTitle="true" />-->
+    </PreferenceCategory>
+</PreferenceScreen>

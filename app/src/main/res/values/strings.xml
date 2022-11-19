@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Countdown Timer</string>
+    <string name="timer_des">Setup your own countdown timer with optional alarms and start/pause/stop them simultaneously or sequentially</string>
+    <string name="settings">Settings</string>
+    <string name="settings_des">Customize your own timer behavior</string>
+    <string name="notifications">Notifications</string>
+    <string name="notify_des">Allow app to send notifications with timer states?</string>
+    <string name="timer_len_men">Timer Length (minutes)</string>
+    <string name="timer_len">Timer Length</string>
+    <string name="timer_len_des">For how many minutes should timer run?</string>
+    <string name="timer">Timer</string>
+    <string name="use_notify">Use App Notifications</string>
+    <string name="timer_current_state">Countdown current state :</string>
+
 </resources>

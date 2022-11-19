@@ -15,9 +15,15 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.CountdownTimer"
         tools:targetApi="31">
-
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.SettingsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.TimerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +35,27 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <!--
+            Receivers
+        -->
+        <receiver
+            android:name=".data.receiver.TimerExpiredReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".data.receiver.TimerNotificationActionReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="stop" />
+                <action android:name="pause" />
+                <action android:name="resume" />
+                <action android:name="start" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

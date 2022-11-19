@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+/app/src/main/java/sparespark/countdown/timer/data/notification
+/app/src/main/java/sparespark/countdown/timer/data/receiver
+/app/src/main/java/sparespark/countdown/timer/TimerApplication.kt
+/app/src/main/java/sparespark/countdown/timer/core/Secrets.kt

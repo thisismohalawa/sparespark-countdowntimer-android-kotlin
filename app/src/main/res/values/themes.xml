@@ -1,12 +1,12 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.CountdownTimer" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorPrimary">@color/teal_700</item>
         <item name="colorPrimaryVariant">@color/teal_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/teal_700</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -34,8 +34,8 @@
 
     <style name="fabButton_" parent="wrapWrap_">
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginStart">@dimen/_12sdp</item>
-        <item name="android:layout_marginEnd">@dimen/_12sdp</item>
+        <item name="android:layout_marginStart">@dimen/_14sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_14sdp</item>
         <item name="android:layout_marginTop">@dimen/_5sdp</item>
         <item name="android:layout_marginBottom">@dimen/_5sdp</item>
     </style>
@@ -45,5 +45,11 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/_30ssp</item>
+    </style>
+
+    <style name="title_" parent="wrapWrap_">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/nexa_font</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
     </style>
 </resources>
