@@ -9,7 +9,11 @@
     <string name="timer_len">Timer Length</string>
     <string name="timer_len_des">For how many minutes should timer run?</string>
     <string name="timer">Timer</string>
-    <string name="use_notify">Use App Notifications</string>
+    <string name="use_notify">Use Notifications</string>
     <string name="timer_current_state">Countdown current state :</string>
+    <string name="stopped">Stopped.</string>
+    <string name="stop">stop</string>
+    <string name="pause">pause</string>
+    <string name="start">start</string>
 
 </resources>

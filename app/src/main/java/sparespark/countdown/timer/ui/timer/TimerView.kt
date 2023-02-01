@@ -83,6 +83,10 @@ class TimerView : Fragment(), View.OnClickListener, KodeinAware {
             pauseButtonEnabledStatus.observe(viewLifecycleOwner) {
                 fab_pause.isEnabled = it
             }
+            /*
+            * app update
+            * */
+            handleEvent(TimerViewEvent.CheckForAppUpdates)
         }
     }
 
@@ -105,9 +109,10 @@ class TimerView : Fragment(), View.OnClickListener, KodeinAware {
         *  remove background timer, hide notification...
         *
         * */
-        if (this::viewModel.isInitialized)
-            viewModel.handleEvent(TimerViewEvent.OnViewResumed(context))
-
+        viewModel.apply {
+            handleEvent(TimerViewEvent.OnViewResumed(context))
+            handleEvent(TimerViewEvent.CheckIfAppUpdatesInProgress)
+        }
     }
 
     override fun onPause() {
@@ -122,7 +127,6 @@ class TimerView : Fragment(), View.OnClickListener, KodeinAware {
         *
         *
         * */
-        if (this::viewModel.isInitialized)
-            viewModel.handleEvent(TimerViewEvent.OnViewPaused(context))
+        viewModel.handleEvent(TimerViewEvent.OnViewPaused(context))
     }
 }

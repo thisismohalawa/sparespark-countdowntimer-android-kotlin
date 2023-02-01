@@ -26,7 +26,14 @@ class TimerApplication : Application(), KodeinAware {
         bind<AlarmSetter>() with singleton { AlarmSetterImpl() }
         bind<NotificationHandler>() with singleton { NotificationHandlerImpl() }
         // viewModel
-        bind() from provider { TimerViewModelFactory(instance(), instance(), instance()) }
+        bind() from provider {
+            TimerViewModelFactory(
+                instance(),
+                instance(),
+                instance(),
+                instance()
+            )
+        }
 
     }
 }

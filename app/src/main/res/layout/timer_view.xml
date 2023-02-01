@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/matchMatch_">
 
-
     <me.zhanghai.android.materialprogressbar.MaterialProgressBar
         android:id="@+id/progress_countdown"
         style="@style/Widget.MaterialProgressBar.ProgressBar"
@@ -15,14 +14,14 @@
         android:layout_marginEnd="@dimen/_30sdp"
         android:minWidth="@dimen/_220sdp"
         android:minHeight="@dimen/_250sdp"
-        app:mpb_progressBackgroundTint="@color/light_gray"
+        app:mpb_progressBackgroundTint="?attr/colorOnSecondary"
         app:mpb_showProgressBackground="true" />
 
     <TextView
         android:id="@+id/txt_countdown"
         style="@style/mainTitle_"
-        android:fontFamily="@font/nexa_font"
         android:layout_centerInParent="true"
+        android:fontFamily="@font/nexa_font"
         tools:text="10:00" />
 
     <LinearLayout
@@ -38,7 +37,7 @@
             android:id="@+id/txt_state"
             style="@style/title_"
             android:layout_margin="@dimen/_2sdp"
-            android:text="Stopped." />
+            android:text="@string/stopped" />
     </LinearLayout>
 
 
@@ -47,7 +46,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/_15sdp"
-        android:background="@color/light_gray"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="@dimen/_5sdp">
@@ -55,20 +53,23 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_start"
             style="@style/fabButton_"
-            app:srcCompat="@drawable/ic_play"
-            tools:ignore="ContentDescription" />
+            android:contentDescription="@string/start"
+            android:src="@drawable/ic_start"
+            app:elevation="@dimen/_2sdp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_pause"
             style="@style/fabButton_"
-            app:srcCompat="@drawable/ic_pause"
-            tools:ignore="ContentDescription" />
+            android:contentDescription="@string/pause"
+            android:src="@drawable/ic_pause"
+            app:elevation="@dimen/_2sdp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_stop"
             style="@style/fabButton_"
-            app:srcCompat="@drawable/ic_stop"
-            tools:ignore="ContentDescription" />
+            android:contentDescription="@string/stop"
+            android:src="@drawable/ic_stop"
+            app:elevation="@dimen/_2sdp" />
     </LinearLayout>
 
 </RelativeLayout>

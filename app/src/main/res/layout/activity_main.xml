@@ -8,6 +8,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
         android:paddingStart="@dimen/_20sdp"
         android:paddingTop="@dimen/_10sdp"
         android:paddingEnd="@dimen/_20sdp"
@@ -18,7 +19,6 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
